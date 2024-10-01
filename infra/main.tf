@@ -21,16 +21,13 @@ resource "aws_cognito_user_pool" "funcionarios_lanchonete_user_pool" {
     require_numbers   = true
     require_symbols   = true
   }
-
-  admin_create_user_config {
-    allow_admin_create_user_only = true
-  }
 }
 
 resource "aws_cognito_user_pool_client" "lanchonete_user_pool_client" {
-  name            = "lanchonete-client-funcionarios"
-  user_pool_id    = aws_cognito_user_pool.funcionarios_lanchonete_user_pool.id
-  generate_secret = false
+  name                = "lanchonete-client-funcionarios"
+  user_pool_id        = aws_cognito_user_pool.funcionarios_lanchonete_user_pool.id
+  generate_secret     = false
+  explicit_auth_flows = ["USER_PASSWORD_AUTH"]
 }
 
 resource "aws_cognito_user" "funcionario_balcao" {
