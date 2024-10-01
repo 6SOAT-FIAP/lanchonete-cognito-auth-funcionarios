@@ -28,9 +28,9 @@ resource "aws_cognito_user_pool" "funcionarios_lanchonete_user_pool" {
 }
 
 resource "aws_cognito_user_pool_client" "lanchonete_user_pool_client" {
-  name                = "lanchonete-client-funcionarios"
-  user_pool_id        = aws_cognito_user_pool.funcionarios_lanchonete_user_pool.id
-  generate_secret     = false
+  name            = "lanchonete-client-funcionarios"
+  user_pool_id    = aws_cognito_user_pool.funcionarios_lanchonete_user_pool.id
+  generate_secret = false
 }
 
 resource "aws_cognito_user" "funcionario_balcao" {
