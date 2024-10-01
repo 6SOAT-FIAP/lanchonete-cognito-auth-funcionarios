@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "44d52dde-605e-4e69-9f0d-e5350a3cd9c3",
+		"_postman_id": "8e1d1253-073b-4741-95c3-e64b0f4759ef",
 		"name": "Lanchonete autenticação funcionários",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "31739777"
@@ -24,7 +24,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"Username\": \"12312312301\",\r\n   \"UserPoolId\": \"us-east-1_VDILUsRNG\",\r\n   \"UserAttributes\": [ \r\n      { \r\n         \"Name\": \"name\",\r\n         \"Value\": \"Deivid Cezar\"\r\n      },\r\n      { \r\n         \"Name\": \"email\",\r\n         \"Value\": \"d.dcezarsilva@gmail.com\"\r\n      }\r\n   ],\r\n   \"TemporaryPassword\": \"abAB12!@\"\r\n}",
+					"raw": "{\r\n   \"Username\": \"12312312301\",\r\n   \"UserPoolId\": \"us-east-1_P3Q8IHgzp\",\r\n   \"UserAttributes\": [ \r\n      { \r\n         \"Name\": \"name\",\r\n         \"Value\": \"Deivid Cezar\"\r\n      },\r\n      { \r\n         \"Name\": \"email\",\r\n         \"Value\": \"d.dcezarsilva@gmail.com\"\r\n      }\r\n   ],\r\n   \"TemporaryPassword\": \"abAB12!@\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "text"
@@ -71,7 +71,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"AuthParameters\": { \r\n      \"USERNAME\" : \"12312312301\",\r\n      \"PASSWORD\" : \"abAB12!@Nova\" \r\n   },\r\n   \"ClientId\": \"okprpfnijig6hkuqr20smkc49\",\r\n   \"UserPoolId\": \"us-east-1_VDILUsRNG\",\r\n   \"AuthFlow\": \"USER_PASSWORD_AUTH\"\r\n}",
+					"raw": "{\r\n   \"AuthParameters\": { \r\n      \"USERNAME\" : \"12312312301\",\r\n      \"PASSWORD\" : \"abAB12!@\" \r\n   },\r\n   \"ClientId\": \"5hdtu5s0nrhb1alif0aqf58rjq\",\r\n   \"UserPoolId\": \"us-east-1_P3Q8IHgzp\",\r\n   \"AuthFlow\": \"ADMIN_USER_PASSWORD_AUTH\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "text"
@@ -118,7 +118,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"ClientId\": \"okprpfnijig6hkuqr20smkc49\",\r\n    \"ChallengeName\": \"NEW_PASSWORD_REQUIRED\",\r\n    \"ChallengeResponses\": {\r\n        \"USERNAME\" : \"12312312301\",\r\n        \"PASSWORD\" : \"abAB12!@\" \r\n    },\r\n    \"Session\": \"AYABeD61uMKy6Sa6kUsTla72-b0AHQABAAdTZXJ2aWNlABBDb2duaXRvVXNlclBvb2xzAAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3NDU2MjM0Njc1NTU6a2V5L2IxNTVhZmNhLWJmMjktNGVlZC1hZmQ4LWE5ZTA5MzY1M2RiZQC4AQIBAHjHL4WD3WpekpFe85nxP9Nwg99u3bPN6BTSaB-uHZcTLAE8yglvgbpirL6LHDF7qBLgAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMq_u8EGDM8K58PuUxAgEQgDs5i5OUWCC6nKCustOYS1gsh-Fw-IFWME_0uO8s47Dx0BWdyFcb67BGCYuzK0pLqFIubSS79hFD356igAIAAAAADAAAEAAAAAAAAAAAAAAAAABgLFS-0lvn3JNPnekLUm-B_____wAAAAEAAAAAAAAAAAAAAAEAAADWeaF2hfxT9-cpUfnsZRGX6UkKqJVThhDeXpIp0-pDtIrXi8uMz7ic_hLudTz_87_bsECLc_nE97h-Y43hvRsZpQBmdVR2x97zBEMRzzQZux1NUUNbLWgf3avUa7gA_zAtQRqSNSFQ0VLYoMInGEkm1w-I3s1jyei6Uw7I3CcLqP-qwysb5xE18IIdOU0KVhpb5rcZyAoFCHP0H3KRqYM0er2XIE6pVDZtEV8_oXoC4IZqH9TpIONZxbWSU-HIVwmEkfCAtZWuCtmSb5VH4HaZlR3UIjmMrNX4MU9WruZrtUP1Szs_swI\"\r\n}",
+					"raw": "{\r\n    \"ClientId\": \"5hdtu5s0nrhb1alif0aqf58rjq\",\r\n    \"ChallengeName\": \"NEW_PASSWORD_REQUIRED\",\r\n    \"ChallengeResponses\": {\r\n        \"USERNAME\" : \"12312312301\",\r\n        \"NEW_PASSWORD\" : \"abAB12!@Nova\" \r\n    },\r\n    \"Session\": \"AYABeIXLod6w2kESh7pzZwlvY0UAHQABAAdTZXJ2aWNlABBDb2duaXRvVXNlclBvb2xzAAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3NDU2MjM0Njc1NTU6a2V5L2IxNTVhZmNhLWJmMjktNGVlZC1hZmQ4LWE5ZTA5MzY1M2RiZQC4AQIBAHjHL4WD3WpekpFe85nxP9Nwg99u3bPN6BTSaB-uHZcTLAGe1Ct479Vz01eBw8tg49kJAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMKyqK2e-y0T-6F22RAgEQgDurW9wwQjIdvrxXSJTUrADMONJPz2ugcT3MM84WrqWnmO80p9Cu2-LhxTrZsqFTs_PVfUDUE9ScasyoogIAAAAADAAAEAAAAAAAAAAAAAAAAADwOOsVK83Xq4dUxrBDvpWT_____wAAAAEAAAAAAAAAAAAAAAEAAADXOyOt3BVGw54KOvE-ILNgk872sWz2jPeYfkI-4XQFPa4AQM4EAzv7kvDwVPp-InFRm3jysDsy7C7mPadZbyDKjtmDsyYZpPiaX_W1hGwNKOak-CI06D9evDEnVzKp1X_GEy4P77h4TrFIaUwTbqvLGE7BSNzFLNBYNkc1H9YqycGGRoVR8CppTyVwtgJ9DT3l1bptxlcW5weGyICm7ri9PCTCZ4VEz26uouEghLTcoOTRzu-0O_DnPqSDVkcTtTb1lD8s_6zydisknvq1epeUU7kabnIIn5zUinLvzo17-AgFqLzsq-YT\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "text"
