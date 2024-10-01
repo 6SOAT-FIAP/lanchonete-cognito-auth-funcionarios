@@ -32,13 +32,3 @@ resource "aws_cognito_user_pool_client" "lanchonete_user_pool_client" {
     "ALLOW_ADMIN_USER_PASSWORD_AUTH"
   ]
 }
-
-resource "aws_cognito_user" "funcionario_balcao" {
-  user_pool_id = aws_cognito_user_pool.funcionarios_lanchonete_user_pool.id
-  username     = "00000000000"
-
-  attributes = {
-    name  = "Funcionario balcao"
-    email = "balcao@gmail.com"
-  }
-}

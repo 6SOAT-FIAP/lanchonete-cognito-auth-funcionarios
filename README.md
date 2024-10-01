@@ -17,7 +17,3 @@ O Cognito User Pool criado por este repositório compõe o fluxo de autenticaç�
 ## Collection
 
 Acesse a [**collection**](assets/autenticacao_funcionarios.postman_collection.json) do Postman com todas as chamadas ao Cognito.
-
-## Funcionário balcão
-
-Trata-se de um funcionário genérico auto-criado, o username (CPF) neste cenário é 00000000000.
