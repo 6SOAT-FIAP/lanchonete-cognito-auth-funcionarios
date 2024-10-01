@@ -31,9 +31,7 @@ resource "aws_cognito_user_pool_client" "lanchonete_user_pool_client" {
   name            = "lanchonete-client-funcionarios"
   user_pool_id    = aws_cognito_user_pool.funcionarios_lanchonete_user_pool.id
   generate_secret = false
-  explicit_auth_flows = [
-    "ALLOW_ADMIN_USER_PASSWORD_AUTH"
-    ]
+  explicit_auth_flows = ["ALLOW_ADMIN_USER_PASSWORD_AUTH"]
 }
 
 resource "aws_cognito_user" "funcionario_balcao" {
