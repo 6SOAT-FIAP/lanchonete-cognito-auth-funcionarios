@@ -22,7 +22,7 @@ resource "aws_cognito_user_pool" "funcionarios_lanchonete_user_pool" {
     require_symbols   = true
   }
 
-    admin_create_user_config {
+  admin_create_user_config {
     allow_admin_create_user_only = true
   }
 }
